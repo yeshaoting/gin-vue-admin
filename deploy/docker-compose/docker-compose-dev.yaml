@@ -47,7 +47,11 @@ services:
     volumes:
       - ../../server:/server
     working_dir: /server    # 如果docker 设置了workdir 则此处不需要设置 
-    command: bash -c "go env -w GOPROXY=https://goproxy.cn,direct && go mod tidy && go run main.go"
+    #依赖没有大的变化，GVA_CONFIG mod tidy，避免所有依赖重新下载，消耗很大。
+    #command: bash -c "go env -w GOPROXY=https://goproxy.cn,direct && go mod tidy && go run main.go"
+    command: bash -c "go env -w GOPROXY=https://goproxy.cn,direct && go run main.go"
+    environment:
+        GVA_CONFIG: config.docker.yaml
     links:
       - mysql
       - redis
