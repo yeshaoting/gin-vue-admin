@@ -129,11 +129,11 @@ mssql:
   log-zap: false
 mysql:
   prefix: ""
-  port: "3306"
+  port: "3406"
   config: charset=utf8mb4&parseTime=True&loc=Local
   db-name: web-manager
   username: admin
-  password: gin-vue-admin
+  password: admin
   path: 127.0.0.1
   engine: ""
   log-mode: error

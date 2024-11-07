@@ -21,14 +21,14 @@ services:
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci #设置utf8字符集
     restart: always
     ports:
-      - "3306:3306"  # host物理直接映射端口为13306
+      - "3406:3306"  # host物理直接映射端口为3406
     environment:
       MYSQL_ROOT_PASSWORD: 'root' # root管理员用户密码
       MYSQL_DATABASE: 'web-manager' # 初始化启动时要创建的数据库的名称
       MYSQL_USER: 'admin'
       MYSQL_PASSWORD: 'admin'
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "gva", "-pAa@6447985"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "admin", "-padmin"]
       interval: 10s
       timeout: 5s
       retries: 3
