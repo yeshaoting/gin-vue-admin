@@ -44,7 +44,7 @@ services:
     hostname: gva-redis-dev
     restart: always
     ports:
-      - '6479:6379'
+      - '6479:6379'  # host物理直接映射端口为6479
     healthcheck:
       test: ["CMD-SHELL", "redis-cli ping | grep PONG || exit 1"]
       interval: 10s
