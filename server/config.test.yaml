@@ -133,7 +133,7 @@ mysql:
     db-name: qmPlus
     username: gva
     password: Aa@6447985
-    path: 177.7.0.13
+    path: 177.8.0.13
     engine: ""
     log-mode: error
     max-idle-conns: 10
@@ -178,7 +178,7 @@ qiniu:
     use-cdn-domains: false
 redis:
     name: ""
-    addr: 177.7.0.14:6379
+    addr: 177.8.0.14:6379
     password: ""
     db: 0
     useCluster: false
