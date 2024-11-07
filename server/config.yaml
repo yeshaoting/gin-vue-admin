@@ -22,7 +22,7 @@ aws-s3:
   s3-force-path-style: false
   disable-ssl: false
 captcha:
-  key-long: 6
+  key-long: 4
   img-width: 240
   img-height: 80
   open-captcha: 0
