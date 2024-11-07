@@ -20,12 +20,12 @@ services:
     hostname: gva-web           #可以通过容器名访问
     restart: always
     ports:
-      - '8080:8080'
+      - '8181:8080'
     working_dir: /web       # 如果docker 设置了workdir 则此处不需要设置
     #若网络不太好，请自行换源，如下
-    command: bash -c "yarn config set registry https://registry.npmmirror.com --global && yarn install && yarn serve"
-    #command: bash -c "yarn install && yarn serve"
-    #command: bash -c "npm install && npm run serve"
+    command: bash -c "yarn config set registry https://registry.npmmirror.com --global && yarn docker >> all.log 2>&1"
+    #command: bash -c "yarn install && yarn docker"
+    #command: bash -c "npm install && npm run docker"
     volumes:
       - ../../web:/web
     networks:
@@ -38,7 +38,7 @@ services:
     hostname: gva-server
     restart: always
     ports:
-      - '8888:8888'
+      - '8282:8888'
     depends_on:
       mysql:
         condition: service_healthy
