@@ -129,11 +129,11 @@ mssql:
   log-zap: false
 mysql:
   prefix: ""
-  port: "13306"
+  port: "3306"
   config: charset=utf8mb4&parseTime=True&loc=Local
-  db-name: qmPlus
-  username: gva
-  password: Aa@6447985
+  db-name: web-manager
+  username: admin
+  password: gin-vue-admin
   path: 127.0.0.1
   engine: ""
   log-mode: error
@@ -179,7 +179,7 @@ qiniu:
   use-cdn-domains: false
 redis:
   name: ""
-  addr: 127.0.0.1:16379
+  addr: 127.0.0.1:6479
   password: ""
   db: 0
   useCluster: false

@@ -1,5 +1,9 @@
+dist/*
 node_modules/*
 package-lock.json
 yarn.lock
 bun.lockb
 config.yaml
+/all.log
+build/**
+build/dist/**
