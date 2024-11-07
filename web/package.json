@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "dev": "yarn install && vite --host --mode development",
-        "test": "yarn install && vite --host --mode docker",
+        "test": "yarn install && vite --host --mode test",
         "prod": "yarn install && vite build --mode production",
         "limit-build": "npm install increase-memory-limit-fixbug cross-env -g && npm run fix-memory-limit && node ./limit && npm run build",
         "preview": "vite preview",

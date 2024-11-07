@@ -82,7 +82,7 @@ hua-wei-obs:
     access-key: you-access-key
     secret-key: you-secret-key
 jwt:
-    signing-key: bc180e3f-0382-4564-83d1-f4a9598c5f58
+    signing-key: 0b5b6a53-3c40-4a30-b498-9f80b7f1cc16
     expires-time: 7d
     buffer-time: 1d
     issuer: qmPlus
@@ -130,9 +130,9 @@ mysql:
     prefix: ""
     port: "3306"
     config: charset=utf8mb4&parseTime=True&loc=Local
-    db-name: qmPlus
-    username: gva
-    password: Aa@6447985
+    db-name: web-manager
+    username: admin
+    password: admin
     path: 177.8.0.13
     engine: ""
     log-mode: error

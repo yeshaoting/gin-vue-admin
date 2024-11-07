@@ -25,12 +25,10 @@ services:
     #   - server
     working_dir: /web       # 如果docker 设置了workdir 则此处不需要设置
     #若网络不太好，请自行换源，如下
-    command: bash -c "yarn config set registry https://registry.npmmirror.com --global && yarn dev"
+    command: bash -c "yarn config set registry https://registry.npmmirror.com --global && yarn test"
     #command: bash -c "yarn dev"
     volumes:
       - ../../../web:/web
-    environment:
-      NODE_ENV: test
     networks:
       network:
         ipv4_address: 177.8.0.11
