@@ -228,7 +228,7 @@ timer:
     start: true
 zap:
     level: info
-    prefix: '[github.com/flipped-aurora/gin-vue-admin/server]'
+    prefix: '[GVA Server]'
     format: console
     director: log
     encode-level: LowercaseColorLevelEncoder
